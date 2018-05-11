@@ -1,6 +1,11 @@
-$color-bg: green;
-$color-text: red;
-$color-link: green;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700,900|Montserrat:900|Open+Sans:800|Roboto:900');
+$main-font: 'Lato', sans-serif ;
+$jumbo-font: 'Roboto', sans-serif;
+$test1: 'Montserrat', sans-serif;
+$test2: 'Open Sans', sans-serif;
+
+$header-bg: #313234;
+$header-color: #fff;
 
 //grid system
 $grid-columns: 12;

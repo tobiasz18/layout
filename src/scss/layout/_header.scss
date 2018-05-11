@@ -1,1 +1,39 @@
 @import '../helpers/variables';
+
+header {
+    background-color: $header-bg;
+    font-family: $main-font;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    img {
+        float: left;
+
+        width: 75px;
+    }
+
+    ul {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+
+        li {
+            float: left;
+            margin-left: 12px;
+            text-decoration: none;
+            padding: 10px;
+
+            &:hover {
+                background: #ccc;
+                cursor: pointer;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $header-color;
+        }
+    }
+}

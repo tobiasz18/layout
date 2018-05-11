@@ -1,0 +1,11 @@
+body {
+  background-color: blue;
+  color: red; }
+
+a {
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyIsIl9zZXR0aW5ncy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0ksdUJDSlc7RURLWCxXQ0pZLEVES2Y7O0FBRUQ7RUFDSSxhQ05jO0VET2QscUJBQWE7RUFBYixxQkFBYTtFQUFiLGNBQWEsRUFDaEIiLCJmaWxlIjoibWFpbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0ICdzZXR0aW5ncyc7XHJcblxyXG5cclxuYm9keSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAkY29sb3ItYmc7XHJcbiAgICBjb2xvcjogJGNvbG9yLXRleHQ7XHJcbn1cclxuXHJcbmEge1xyXG4gICAgY29sb3I6ICRjb2xvci1saW5rO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxufVxyXG4iLCIkY29sb3ItYmc6IGJsdWU7XHJcbiRjb2xvci10ZXh0OiByZWQ7XHJcblxyXG4kY29sb3ItbGluazogZ3JlZW47XHJcbiJdfQ== */

@@ -1,12 +1,11 @@
-@import 'settings';
+@import './helpers/variables';
+@import './layout/grid';
+@import 'layout/header';
 
-
-body {
-    background-color: $color-bg;
-    color: $color-text;
+* {
+    box-sizing: border-box;
 }
 
-a {
-    color: $color-link;
-    display: flex;
+body {
+
 }

@@ -56,6 +56,11 @@ gulp.task('html', function() { //dist
         .pipe(gulp.dest('dist/'))
 })
 
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('src/fonts'))
+})
+
 gulp.task('serve', ['sass'], function() {
     browserSync({
         server: 'src'

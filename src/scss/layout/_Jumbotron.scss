@@ -1,1 +1,30 @@
 @import '../helpers/variables';
+
+.hero {
+    background: url('../img/jumbo5.jpg');
+    height: 80vh;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    h5 {
+        margin: 0;
+    }
+
+    .slogan {
+        position: absolute;
+        right: 0;
+        top: 300;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 34px;
+        line-height: 35px;
+        letter-spacing: 0.2em;
+        border-radius: 3px;
+    }
+}

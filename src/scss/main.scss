@@ -1,10 +1,13 @@
 @import 'helpers/variables';
 @import 'layout/grid';
+
+//components in sequence
 @import 'layout/header';
 @import 'layout/Jumbotron';
 @import 'layout/content';
 @import 'layout/gallery';
 @import 'layout/people';
+@import 'layout/about';
 
 * {
     box-sizing: border-box;

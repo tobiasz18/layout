@@ -21,9 +21,9 @@
     "gulp-html-replace": "^1.6.2",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
+    "gulp-replace-task": "^0.11.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "node-font-awesome": "^1.0.2",
     "run-sequence": "^2.2.1"
   }
 }

@@ -10,7 +10,7 @@ let htmlReplace = require('gulp-html-replace');
 let htmlMin = require('gulp-htmlmin');
 let del = require('del');
 let sequence = require('run-sequence')
-
+let replace = require('gulp-replace-task')
 
 gulp.task('reload', function() {
     browserSync.reload();
@@ -46,7 +46,7 @@ gulp.task('img', function() { //dist
 gulp.task('html', function() { //dist
     return gulp.src('src/*.html')
         .pipe(htmlReplace({
-            'minify-css': 'css/style.css'
+            'minify-css': 'css/style.css',
         }))
         .pipe(htmlMin({
             sortAttributes: true,
@@ -56,12 +56,30 @@ gulp.task('html', function() { //dist
         .pipe(gulp.dest('dist/'))
 })
 
-gulp.task('fonts', function() {
-  return gulp.src('node_modules/font-awesome/fonts/*')
-    .pipe(gulp.dest('src/fonts'))
+gulp.task('font-awesome', function() {
+  return gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+  .pipe(gulp.dest('src/css'));
 })
 
-gulp.task('serve', ['sass'], function() {
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('src/fonts'));
+});
+
+gulp.task('font-prod', function() { //fonts production dist replaced
+  gulp.src(['./src/fonts/**/*.{eot,svg,ttf,woff,woff2,otf}'])
+    .pipe(replace({
+      patterns: [
+        {
+          match: 'foo',
+          replacement: 'bar'
+        }
+      ]
+    }))
+    .pipe(gulp.dest('dist/fonts'));
+})
+
+gulp.task('serve', ['sass', 'font-awesome', 'fonts'], function() {
     browserSync({
         server: 'src'
     });
@@ -75,7 +93,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', function() { //production
-    sequence('clean', ['html', 'minify-css', 'img']);
+    sequence('clean', ['html', 'minify-css', 'img', 'font-prod']);
 });
 
 gulp.task('default', ['serve']);

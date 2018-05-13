@@ -43,6 +43,18 @@ article {
     }
 }
 
+@media #{$breakpoint-gallery} {
+    .container {
+        width: 95%;
+        max-width: $grid-max-width;
+    }
+    @for $i from 1 through $grid-columns {
+        .col-gl-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+
 @media #{$breakpoint-mobail} {
     .container {
         width: 95%;
@@ -85,18 +97,6 @@ article {
 
     @for $i from 1 through $grid-columns {
         .col-lg-#{$i} {
-            width: 100% / $grid-columns * $i;
-        }
-    }
-}
-
-@media #{$breakpoint-desktop} {
-    .container {
-        width: 95%;
-        max-width: $grid-max-width;
-    }
-    @for $i from 1 through $grid-columns {
-        .col-xl-#{$i} {
             width: 100% / $grid-columns * $i;
         }
     }

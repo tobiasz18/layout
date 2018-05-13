@@ -1,8 +1,10 @@
-@import './helpers/variables';
-@import './layout/grid';
+@import 'helpers/variables';
+@import 'layout/grid';
 @import 'layout/header';
 @import 'layout/Jumbotron';
 @import 'layout/content';
+@import 'layout/gallery';
+
 
 * {
     box-sizing: border-box;

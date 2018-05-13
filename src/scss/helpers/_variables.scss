@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700,900|Montserrat:900|Open+Sans:800|Roboto:900');
-@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
-
-$fa-font-path: "../../../node_modules/font-awesome/scss/font-awesome.scss";
 
 $main-font: 'Lato', sans-serif ;
 $jumbo-font: 'Roboto', sans-serif;
@@ -10,11 +7,13 @@ $test2: 'Open Sans', sans-serif;
 
 $header-bg: #313234;
 $header-color: #fff;
+$font-awesome: #20cbe5;
+$paragraph-color: #6d6d6de8;
 
 //grid system
 $grid-columns: 12;
 $grid-max-width: 1200px; //breakpoint-small
 $breakpoint-small: "only screen and (min-width: 0px)";
-$breakpoint-medium: "only screen and (min-width: 768px)";
-$breakpoint-large: "only screen and (min-width: 1008px)";
-$breakpoint-xl: "only screen and (min-width: 1300px)";
+$breakpoint-mobail: "only screen and (max-width: 330px)";
+$breakpoint-tablet: "only screen and (min-width: 768px)";
+$breakpoint-desktop: "only screen and (min-width: 1008px)";

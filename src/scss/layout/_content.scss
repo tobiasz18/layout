@@ -1,0 +1,40 @@
+@import '../helpers/variables';
+
+.icons {
+    &:hover {
+        color: $font-awesome;
+        cursor: pointer;
+    }
+
+    i {
+        font-size: 5.5em;
+    }
+
+    h1 {
+        letter-spacing: 1.2px;
+        font-size: 1.5em;
+    }
+
+    + p {
+        color: $paragraph-color;
+        font-size: 18px;
+    }
+}
+
+.text {
+    &:hover {
+        color: $font-awesome;
+        cursor: pointer;
+    }
+    
+    > h1 {
+        font-size: 35px;
+        font-family: $test1;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $paragraph-color;
+        font-size: 20px;
+    }
+}

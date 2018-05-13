@@ -5,6 +5,16 @@
     margin: 0 auto;
 }
 
+section {
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+article {
+    float: left;
+    margin-bottom: 100px;
+}
+
 .container:after,
 .row.after {
     content: "";
@@ -25,6 +35,7 @@
         width: 95%;
         max-width: $grid-max-width;
     }
+
     @for $i from 1 through $grid-columns {
         .col-sm-#{$i} {
             width: 100% / $grid-columns * $i;
@@ -32,11 +43,31 @@
     }
 }
 
-@media #{$breakpoint-medium} {
+@media #{$breakpoint-mobail} {
     .container {
         width: 95%;
         max-width: $grid-max-width;
     }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 5px;
+
+            li {
+                margin-right: 12px;
+            }
+        }
+    }
+
     @for $i from 1 through $grid-columns {
         .col-md-#{$i} {
             width: 100% / $grid-columns * $i;
@@ -44,11 +75,14 @@
     }
 }
 
-@media #{$breakpoint-large} {
+@media #{$breakpoint-tablet} {
     .container {
         width: 95%;
         max-width: $grid-max-width;
     }
+
+
+
     @for $i from 1 through $grid-columns {
         .col-lg-#{$i} {
             width: 100% / $grid-columns * $i;
@@ -56,7 +90,7 @@
     }
 }
 
-@media #{$breakpoint-xl} {
+@media #{$breakpoint-desktop} {
     .container {
         width: 95%;
         max-width: $grid-max-width;

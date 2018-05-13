@@ -10,14 +10,13 @@ header {
 nav {
     img {
         float: left;
-
         width: 75px;
     }
 
     ul {
         float: right;
         list-style-type: none;
-        margin: 0;
+        margin: 0px;
 
         li {
             float: left;
@@ -37,9 +36,4 @@ nav {
         }
     }
 
-    .fa {
-
-     color: white;
-
-    }
 }

@@ -1,0 +1,47 @@
+@import '../helpers/variables';
+
+
+
+.photo {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 275px;
+    margin: 10px;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #afacac;
+    }
+
+    &:hover {
+        &:before {
+            content: "";
+            background:  rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .name-position {
+            display: none;
+        }
+    }
+
+    .name-position {
+        top: 90;
+        position: absolute;
+        width: 100%;
+        color: white;
+        font-size: 23px;
+        font-family: $people-font;
+        text-transform: uppercase;
+    }
+
+    + h3 {
+        font-size: 22px;
+        padding-left: 10px;
+
+        font-weight: 900;
+    }
+}

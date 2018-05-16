@@ -1,0 +1,129 @@
+@import '../helpers/variables';
+
+.contact {
+    background: #313332;
+    float: left;
+    margin-bottom: 0px;
+    color: #fff;
+    width: 100%;
+
+    figure {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-left: 5%;
+
+        > div {
+            padding-left: 12.5%; //25%
+        }
+
+        &:first-child {
+
+        }
+    }
+}
+
+.head {
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: 35px;
+
+        &:after {
+            content: " ";
+            display: inline-block;
+            width: 20%;
+            border: 2px solid #fff;
+            margin-left: 5px;
+        }
+    }
+}
+
+.contact-elem {
+    float: left;
+
+    div {
+        padding: 0;
+        padding-bottom: 10px;
+
+        h4 {
+            margin: 0;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0;
+
+            text-align: left;
+            color: #b1abab;
+        }
+    }
+}
+
+.about-as {
+    padding: 0;
+
+    div {
+        padding: 0;
+
+    }
+
+     p {
+        text-align: left;
+        font-size: 20px;
+        color: #b1abab;
+
+    }
+}
+
+.social-elem {
+    float: left;
+
+    .social-text {
+        p {
+            text-align: left;
+            color: #b1abab;
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+    }
+
+    .social-media {
+        letter-spacing: 12px;
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 25px;
+
+        i {
+            font-size: 15px;
+            display: inline-block;
+            float: left;
+            padding: 10px;
+            border: groove;
+            border: #28ede3;
+            background-color: #28ede3;
+            margin-left: 7px;
+            width: 35px;
+
+            &:hover {
+                background: #009c94;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+footer  {
+     div {
+         float: left;
+         text-align: center;
+         width: 100%;
+         background: #fff;
+         color: #797979;
+         font-weight: bold;
+    }
+}

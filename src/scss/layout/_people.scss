@@ -1,7 +1,5 @@
 @import '../helpers/variables';
 
-
-
 .photo {
     border-radius: 50%;
     overflow: hidden;
@@ -9,33 +7,28 @@
     height: 275px;
     margin: 10px;
 
-    &:before {
-        content: "";
+
+    .name-position {
+        top: 0;
         position: absolute;
         width: 100%;
         height: 100%;
-        background: #afacac;
-    }
-
-    &:hover {
-        &:before {
-            content: "";
-            background:  rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-        }
-        .name-position {
-            display: none;
-        }
-    }
-
-    .name-position {
-        top: 90;
-        position: absolute;
-        width: 100%;
         color: white;
         font-size: 23px;
         font-family: $people-font;
         text-transform: uppercase;
+        background: #616263;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background:  rgba(0, 0, 0, 0.1);
+
+            h3 {
+                display: none;
+            }
+        }
     }
 
     + h3 {
@@ -43,5 +36,11 @@
         padding-left: 10px;
 
         font-weight: 900;
+    }
+
+    > img {
+        height: 275;
+        width: 100%;
+        //-webkit-transform: scale(0.9);
     }
 }

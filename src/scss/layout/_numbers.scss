@@ -1,0 +1,19 @@
+@import '../helpers/variables';
+
+
+.numbers {
+    width: 100%;
+
+    h1 {
+        font-family: $numbers-font;
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 25px;
+        color: $font-awesome;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}

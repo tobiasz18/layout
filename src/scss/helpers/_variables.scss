@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700,900|Montserrat:900|Open+Sans:800|Roboto:900');
+@import url('https://fonts.googleapis.com/css?family=Baloo'); //numbers font
+
 
 $main-font: 'Lato', sans-serif ;
 $jumbo-font: 'Roboto', sans-serif;
@@ -7,13 +9,13 @@ $people-font: 'Open Sans', sans-serif;
 
 $header-bg: #313234;
 $header-color: #fff;
-$font-awesome: #20cbe5;
+$font-awesome: #20cbe5; // and numbers section text
 $paragraph-color: #6d6d6de8;
-
+$numbers-font: 'Baloo', cursive;
 //grid system
 $grid-columns: 12;
 $grid-max-width: 1200px; //breakpoint-small
 $breakpoint-small: "only screen and (min-width: 0px)";
 $breakpoint-mobail: "only screen and (max-width: 330px)";
 $breakpoint-gallery: "only screen and (min-width: 330px)";
-$breakpoint-tablet: "only screen and (min-width: 768px)";
+$breakpoint-tablet: "only screen and (min-width: 840px)";

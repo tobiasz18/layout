@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700,900|Montserrat:900|Open+Sans:800|Roboto:900');
 @import url('https://fonts.googleapis.com/css?family=Baloo'); //numbers font
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
+$main-font: 'Lato', sans-serif ; //body
+//$jumbo-font: 'Roboto', sans-serif;
 
-$main-font: 'Lato', sans-serif ;
-$jumbo-font: 'Roboto', sans-serif;
-$featured-works-font: 'Montserrat', sans-serif;
-$people-font: 'Open Sans', sans-serif;
+$header-bg: #313234; //header background
 
-$header-bg: #313234;
-$header-color: #fff;
-$font-awesome: #20cbe5; // and numbers section text
+//content section
 $paragraph-color: #6d6d6de8;
+$featured-works-font: 'Montserrat', sans-serif; //about section text too
+
+//gallery section background(blackout) image
+$gallery-backout: rgba(0,0,0,0.7);
+
+//people section
+$people-font: 'Open Sans', sans-serif;
+$people-bg-color: #616263;
+
+//about  section  main color/ navigation header / jumbotron color
+$white: #fff;
+
+/*--- numbers section color and generally hover color ---*/
+$font-awesome: #20cbe5; // numbers section color and hover in content section
 $numbers-font: 'Baloo', cursive;
+
+//contact-footer-section
+$contact-footer-bg: #313332;
+$contact-paragraph: #b1abab;
+$contact-icon: #28ede3;
+$contact-icon-hover: #009c94;
+
 //grid system
 $grid-columns: 12;
 $grid-max-width: 1200px; //breakpoint-small

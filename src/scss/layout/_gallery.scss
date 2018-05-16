@@ -27,7 +27,7 @@ figure {
         }
 
         &:hover {
-            background: rgba(0,0,0,0.7);
+            background: $gallery-backout;
             cursor: pointer;
 
             i {

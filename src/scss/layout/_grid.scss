@@ -30,53 +30,6 @@ article {
     display: inline-block;
 }
 
-@media #{$breakpoint-mobail} {
-    .container {
-        width: 95%;
-        max-width: $grid-max-width;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        ul {
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-            padding-bottom: 5px;
-
-            li {
-                margin-right: 12px;
-            }
-        }
-    }
-    //contact-footer
-    .contact {
-        figure {
-            margin-top: 10px !important;
-            margin-bottom: 10px !important;
-            .head {
-                h1 {
-                    font-size: 19px;
-                }
-            }
-            p {
-                font-size: 15px;
-            }
-        }
-    }
-
-    @for $i from 1 through $grid-columns {
-        .col-md-#{$i} {
-            width: 100% / $grid-columns * $i;
-        }
-    }
-}
-
 @media #{$breakpoint-small} {
     .container {
         width: 95%;
@@ -124,6 +77,72 @@ article {
 
     @for $i from 1 through $grid-columns {
         .col-lg-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+
+
+@media #{$breakpoint-mobail} {
+    .container {
+        width: 95%;
+        max-width: $grid-max-width;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 5px;
+
+            li {
+                margin-right: 12px;
+            }
+        }
+    }
+    //people section
+    .photo {
+        transform: scale(0.7);
+
+        + h3 {
+            padding-left: 0;
+            font-size: 17px;
+        }
+    }
+    //contact-footer
+    .contact {
+        figure {
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+
+            .head {
+                h1 {
+                    font-size: 19px;
+                    min-width: 200px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .social-elem {
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    @for $i from 1 through $grid-columns {
+        .col-md-#{$i} {
             width: 100% / $grid-columns * $i;
         }
     }

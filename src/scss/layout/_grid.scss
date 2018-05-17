@@ -30,31 +30,6 @@ article {
     display: inline-block;
 }
 
-@media #{$breakpoint-small} {
-    .container {
-        width: 95%;
-        max-width: $grid-max-width;
-    }
-
-    @for $i from 1 through $grid-columns {
-        .col-sm-#{$i} {
-            width: 100% / $grid-columns * $i;
-        }
-    }
-}
-
-@media #{$breakpoint-gallery} {
-    .container {
-        width: 95%;
-        max-width: $grid-max-width;
-    }
-    @for $i from 1 through $grid-columns {
-        .col-gl-#{$i} {
-            width: 100% / $grid-columns * $i;
-        }
-    }
-}
-
 @media #{$breakpoint-mobail} {
     .container {
         width: 95%;
@@ -79,9 +54,48 @@ article {
             }
         }
     }
+    //contact-footer
+    .contact {
+        figure {
+            margin-top: 10px !important;
+            margin-bottom: 10px !important;
+            .head {
+                h1 {
+                    font-size: 19px;
+                }
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
 
     @for $i from 1 through $grid-columns {
         .col-md-#{$i} {
+            width: 100% / $grid-columns * $i;
+        }
+    }
+}
+
+@media #{$breakpoint-small} {
+    .container {
+        width: 95%;
+        max-width: $grid-max-width;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        figure {
+            width: 50%;
+        }
+    }
+
+
+    @for $i from 1 through $grid-columns {
+        .col-sm-#{$i} {
             width: 100% / $grid-columns * $i;
         }
     }
@@ -93,7 +107,20 @@ article {
         max-width: $grid-max-width;
     }
 
+    .contact {
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
 
+        figure {
+            float: left;
+            width: 32%; // 96% + 4% // + float: left = center
+
+            &:first-child {
+                margin-left: 4%;
+            }
+        }
+    }
 
     @for $i from 1 through $grid-columns {
         .col-lg-#{$i} {

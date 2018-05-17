@@ -8,10 +8,7 @@
     color: #fff;
     width: 100%;
 
-
     figure {
-        margin-top: 50px;
-        margin-bottom: 50px;
         padding-left: 5%;
     }
 }
@@ -21,7 +18,8 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        font-size: 35px;
+        font-size: 2.5vw;
+        font-weight: 900;
 
         &:after {
             content: " ";
@@ -43,11 +41,13 @@
         h4 {
             margin: 0;
             text-align: left;
+            font-size: 14px;
             text-transform: uppercase;
         }
 
         p {
             margin: 0;
+            font-size: 14px;
             text-align: left;
             color: $contact-paragraph;
         }
@@ -63,7 +63,7 @@
 
      p {
         text-align: left;
-        font-size: 20px;
+        font-size: 17px;
         max-width: 350px;
         color: $contact-paragraph;
     }
@@ -83,10 +83,8 @@
     }
 
     .social-media {
-
         float: left;
         width: 100%;
-
         padding-top: 25px;
 
         i {

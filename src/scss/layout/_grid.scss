@@ -1,4 +1,5 @@
 @import '../helpers/variables';
+@import '../helpers/mixins';
 
 .container {
     width: 100%;
@@ -37,15 +38,12 @@ article {
     }
 
     .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexbox-center(flex, column, center, none);
 
         figure {
             width: 50%;
         }
     }
-
 
     @for $i from 1 through $grid-columns {
         .col-sm-#{$i} {
@@ -90,16 +88,12 @@ article {
     }
 
     nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexbox-center(flex, column, center, none);
 
         ul {
+            @include flexbox-center(flex, column, center, none);
             padding: 0;
-            display: flex;
-            flex-direction: column;
             width: 100%;
-            text-align: center;
             padding-bottom: 5px;
 
             li {

@@ -30,11 +30,12 @@ $contact-footer-bg: #313332;
 $contact-paragraph: #b1abab;
 $contact-icon: #28ede3;
 $contact-icon-hover: #009c94;
-
+//footer
+$footer-color-font-grey: #797979;
 //grid system
 $grid-columns: 12;
 $grid-max-width: 1200px; //breakpoint-small
 
 $breakpoint-mobail: "only screen and (max-width: 400px)";
-$breakpoint-small: "only screen and (min-width: 330px)";
+$breakpoint-small: "only screen and (min-width: 0px)";
 $breakpoint-tablet: "only screen and (min-width: 765px)";

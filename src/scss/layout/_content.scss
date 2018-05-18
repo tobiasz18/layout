@@ -1,4 +1,6 @@
 @import '../helpers/variables';
+@import '../helpers/extends';
+@import '../helpers/mixins';
 
 .icons {
     &:hover {
